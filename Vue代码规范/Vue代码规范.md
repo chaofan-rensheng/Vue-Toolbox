@@ -614,6 +614,6 @@ props: {
 </style>
 ```
 ## 参考
-    [史上最全的Vue开发规范](https://juejin.im/post/5b67e49551882508603d1431)
-    
-    [Vue风格指南](https://cn.vuejs.org/v2/style-guide/index.html#%E8%A7%84%E5%88%99%E5%BD%92%E7%B1%BB)
+
+* [史上最全的Vue开发规范](https://juejin.im/post/5b67e49551882508603d1431)
+* [Vue风格指南](https://cn.vuejs.org/v2/style-guide/index.html#%E8%A7%84%E5%88%99%E5%BD%92%E7%B1%BB)
