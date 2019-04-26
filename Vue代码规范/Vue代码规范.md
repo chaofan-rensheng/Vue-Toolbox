@@ -1,6 +1,6 @@
-#Vue代码规范
+# Vue代码规范
 
-##目录
+## 目录
 命名规范
 
 结构化规范
@@ -15,8 +15,8 @@ Sass规范
 
 特殊规范
 
-##命名规范
-###变量命名
+## 命名规范
+### 变量命名
 * 命名方法 ：驼峰命名法
 * 命名规范 ：
 命名需有相关性如
@@ -28,7 +28,7 @@ const mySchool = "我的学校";
 const names = new Array();
 ```
 
-###常量命名
+### 常量命名
 
 * 命名方法 : 全部大写
 * 命名规范 : 使用大写字母和下划线来组合命名，下划线用以分割单词。
@@ -37,7 +37,7 @@ const MAX_COUNT = 10
 const URL = 'https://www.baidu.com/'
 ```
 
-###组件命名规范
+### 组件命名规范
 PascalCase (单词首字母大写命名)是最通用的声明约定
 kebab-case (短横线分隔命名) 是最通用的使用约定
 
@@ -140,8 +140,6 @@ kebab-case (短横线分隔命名) 是最通用的使用约定
 3. 复杂的业务逻辑处理说明
 4. 特殊情况的代码处理说明,对于代码中特殊用途的变量、存在临界值、函数中使用的 hack、使用了某种算法或思路等需要进行注释描述
 5. 多重 if 判断语句
-6. 单行注释使用//
-7. 注释块必须以/**（至少两个星号）开头**/
 
 ### 单行注释
 注释单独一行，不要在代码后的同一行内加注释，//后面要加空格。例如：
@@ -597,22 +595,27 @@ props: {
 对用页面级组件样式，应该是有作用域的
 对于公用组件或者全局组件库，我们应该更倾向于选用基于 class 的 BEM 策略
 ```
-<style lang='scss'></style> // bad
+// bad
+<style lang='scss'></style> 
 
-  <!-- 使用 scoped 作用域 -->
-  <style lang='scss' scoped></style> // good
+// good
+<!-- 使用 scoped 作用域 -->
+<style lang='scss' scoped></style> 
 
-  <!-- 使用 BEM 约定 -->
-  <style> // good
-  .c-Button {
+
+
+<!-- 使用 BEM 约定 -->
+// good
+<style> 
+.c-Button {
     border: none;
     border-radius: 2px;
-  }
+}
 
-  .c-Button--close {
+.c-Button--close {
     background-color: red;
-  }
-  </style>
+}
+</style>
 ```
 
 
